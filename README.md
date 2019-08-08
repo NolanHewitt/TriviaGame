@@ -1,1 +1,1 @@
-# TriviaGame
+https://nolanhewitt.github.io/TriviaGame/
