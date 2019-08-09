@@ -7,27 +7,34 @@
     <title>Trivia Question Game</title>
 
     <!--CSS Reset-->
-    <link rel="stylesheet" href="./CSSresets.css">
+    <link rel="stylesheet" href="./assets/css/CSSresets.css">
 
     <!--CSS Style-->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
+  <style> 
+   
+   body  {
+     background-image: url("./assets/image/qbackground.png");
+         } 
+
+  </style>
 
   </head>
 
   <body>
 
-    <div id="wrapper">
+    <div id="container">
 
-      <h1>Fun Trivia Questions!</h1>
+      <h1>Rapid Trivia Questions!</h1>
 
-      <div id="sub-wrapper">
+      <div id="subcontainer">
 
-        <div id="quiz-area">
+        <div id="quiz">
 
         <div id="winbox"></div>
 
-        <div id="timer_div">Time Left: 30</div>
+        <div id="timerdiv">Time Left: 30</div>
 
           <button id="begin">Begin Trivia!</button>
 
@@ -69,61 +76,61 @@
 
 <br>
 
-          <div id="Q4">Question 4</div>
+          <div id="Q4">What color is the sky?</div>
           <div id="A4">
             <form> 
-                    <input type="radio" name="gender" value="male"> 1994 </input>
-                    <input type="radio" name="gender" value="male"> 1995 </input>
-                    <input type="radio" name="gender" value="male"> 1996 </input>
-                    <input type="radio" name="gender" value="male"> 1997 </input>
+                    <input type="radio" name="color" value="1"> Cyan </input>
+                    <input type="radio" name="color" value="0"> Cerulean Blue </input>
+                    <input type="radio" name="color" value="0"> Sky Blue </input>
+                    <input type="radio" name="color" value="1"> Azure </input>
             </form>
           </div>
 
 <br>          
 
-          <div id="Q5">Question 5</div>
+          <div id="Q5">Which is the largest?</div>
           <div id="A5">
             <form> 
-                    <input type="radio" name="gender" value="male"> 1994 </input>
-                    <input type="radio" name="gender" value="male"> 1995 </input>
-                    <input type="radio" name="gender" value="male"> 1996 </input>
-                    <input type="radio" name="gender" value="male"> 1997 </input>
+                    <input type="radio" name="large" value="1"> Earth </input>
+                    <input type="radio" name="large" value="0"> Mars </input>
+                    <input type="radio" name="large" value="0"> Milky Way </input>
+                    <input type="radio" name="large" value="0"> Galaxy </input>
             </form>
           </div>
 
 <br>          
 
-          <div id="Q6">Question 6</div>
+          <div id="Q6">How many letters in this sentance?</div>
           <div id="A6">
             <form> 
-                    <input type="radio" name="gender" value="male"> 1994 </input>
-                    <input type="radio" name="gender" value="male"> 1995 </input>
-                    <input type="radio" name="gender" value="male"> 1996 </input>
-                    <input type="radio" name="gender" value="male"> 1997 </input>
+                    <input type="radio" name="letters" value="0"> 29 </input>
+                    <input type="radio" name="letters" value="0"> 28 </input>
+                    <input type="radio" name="letters" value="0"> 4 </input>
+                    <input type="radio" name="letters" value="1"> 8 </input>
             </form>
           </div>
 
 <br>        
 
-          <div id="Q7">Question 7</div>
+          <div id="Q7">What is the diameter of the earth?</div>
           <div id="A7">
             <form> 
-                    <input type="radio" name="gender" value="male"> 1994 </input>
-                    <input type="radio" name="gender" value="male"> 1995 </input>
-                    <input type="radio" name="gender" value="male"> 1996 </input>
-                    <input type="radio" name="gender" value="male"> 1997 </input>
+                    <input type="radio" name="miles" value="0"> 7000 Miles </input>
+                    <input type="radio" name="miles" value="1"> 8000 Miles </input>
+                    <input type="radio" name="miles" value="0"> 9000 Miles </input>
+                    <input type="radio" name="miles" value="0"> 10000 Miles </input>
             </form>
           </div>
 
 <br>          
 
-          <div id="Q8">Question 8</div>
+          <div id="Q8">How many lines of code make up this sites HTML page?</div>
           <div id="A8">
             <form> 
-                    <input type="radio" name="gender" value="male"> 1994 </input>
-                    <input type="radio" name="gender" value="male"> 1995 </input>
-                    <input type="radio" name="gender" value="male"> 1996 </input>
-                    <input type="radio" name="gender" value="male"> 1997 </input>
+                    <input type="radio" name="html" value="0"> 98 </input>
+                    <input type="radio" name="html" value="0"> 127 </input>
+                    <input type="radio" name="html" value="1"> 141 </input>
+                    <input type="radio" name="html" value="0"> 156 </input>
             </form>
           </div>
 
@@ -134,7 +141,7 @@
     </div>
 
 <!--Javascript-->
-    <script src="./game.js"></script>
+    <script src="./assets/javascript/game.js"></script>
 
   </body>
 

@@ -18,12 +18,12 @@ document.getElementById("begin").addEventListener("click", function(){
     document.getElementById("A8").style.display="inline";
     document.getElementById("begin").style.display="none";
     document.getElementById("end").style.display="inline";
-    document.getElementById("timer_div").style.display="block";
+    document.getElementById("timerdiv").style.display="block";
 
     //Timer Display
     var seconds_left = 30;
     var interval = setInterval(function() {
-    document.getElementById('timer_div').innerHTML ="Time Left: " + --seconds_left;
+    document.getElementById('timerdiv').innerHTML ="Time Left: " + --seconds_left;
 
     if (seconds_left <= 0)
     {
@@ -31,7 +31,7 @@ document.getElementById("begin").addEventListener("click", function(){
     }
 }, 1000);
 
-        //TImed version of submit answers button
+        //Timed version of submit answers button
         setTimeout(myFunction, 1000 * 30)
         function myFunction() {
             document.getElementById("Q1").style.display="none";
@@ -51,7 +51,7 @@ document.getElementById("begin").addEventListener("click", function(){
             document.getElementById("Q8").style.display="none";
             document.getElementById("A8").style.display="none";
             document.getElementById("end").style.display="none";
-            document.getElementById("timer_div").style.display="none";
+            document.getElementById("timerdiv").style.display="none";
     
             //Gets values from all radio buttons
             var Q1 = document.querySelector('input[name="byear"]:checked').value;
@@ -63,13 +63,13 @@ document.getElementById("begin").addEventListener("click", function(){
             var Q3 = document.querySelector('input[name="nv"]:checked').value;
             console.log(Q3);
     
-            var Q4 = document.querySelector('input[name="byear"]:checked').value;
+            var Q4 = document.querySelector('input[name="color"]:checked').value;
             console.log(Q4);
     
-            var Q5 = document.querySelector('input[name="byear"]:checked').value;
+            var Q5 = document.querySelector('input[name="large"]:checked').value;
             console.log(Q5);
     
-            var Q6 = document.querySelector('input[name="byear"]:checked').value;
+            var Q6 = document.querySelector('input[name="letters"]:checked').value;
             console.log(Q6);
     
             var Q7= document.querySelector('input[name="byear"]:checked').value;
@@ -143,7 +143,7 @@ document.getElementById("end").addEventListener("click", function end(){
     document.getElementById("Q8").style.display="none";
     document.getElementById("A8").style.display="none";
     document.getElementById("end").style.display="none";
-    document.getElementById("timer_div").style.display="none";
+    document.getElementById("timerdiv").style.display="none";
 
     //Gets values from all radio buttons
     var Q1 = document.querySelector('input[name="byear"]:checked').value;
@@ -155,19 +155,19 @@ document.getElementById("end").addEventListener("click", function end(){
     var Q3 = document.querySelector('input[name="nv"]:checked').value;
     console.log(Q3);
 
-    var Q4 = document.querySelector('input[name="byear"]:checked').value;
+    var Q4 = document.querySelector('input[name="color"]:checked').value;
     console.log(Q4);
 
-    var Q5 = document.querySelector('input[name="byear"]:checked').value;
+    var Q5 = document.querySelector('input[name="large"]:checked').value;
     console.log(Q5);
 
-    var Q6 = document.querySelector('input[name="byear"]:checked').value;
+    var Q6 = document.querySelector('input[name="letters"]:checked').value;
     console.log(Q6);
 
-    var Q7= document.querySelector('input[name="byear"]:checked').value;
+    var Q7= document.querySelector('input[name="miles"]:checked').value;
     console.log(Q7);
 
-    var Q8 = document.querySelector('input[name="byear"]:checked').value;
+    var Q8 = document.querySelector('input[name="html"]:checked').value;
     console.log(Q8);
 
 
@@ -201,7 +201,11 @@ document.getElementById("end").addEventListener("click", function end(){
     console.log(win);
 
     //Conditions for displaying number of correct answers
-    if (win >= 2) {
+    if (win >= 8) {
+        document.getElementById("winbox").innerHTML = "You got all the answers correct! Amazing!";
+    } 
+    
+    else if (win >= 2) {
         document.getElementById("winbox").innerHTML = "You got " + win + " answers correct!";
     } 
 
